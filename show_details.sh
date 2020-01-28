@@ -11,7 +11,7 @@ while true; do
     bridge link show
     bridge vlan show
     ip bridge || ip help
-    sudo nmcli connection show
+    nmcli connection show
 
     sleep 60
 done
