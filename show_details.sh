@@ -5,7 +5,7 @@ set -x
 export PATH=$PATH:/usr/sbin
 
 while true; do
-    cat /etc/centos-release
+    cat /etc/fedora-release
     ip addr
     netstat -nr
     bridge link show

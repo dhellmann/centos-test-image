@@ -1,5 +1,5 @@
-FROM centos:7
+FROM fedora
 
-RUN yum -y install net-tools bridge-utils
+RUN dnf install -y net-tools
 
 COPY show_details.sh /
