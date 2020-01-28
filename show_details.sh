@@ -10,7 +10,7 @@ while true; do
     netstat -nr
     bridge link show
     bridge vlan show
-    ip bridge
+    ip bridge || ip help
 
     sleep 60
 done
