@@ -10,8 +10,7 @@ while true; do
     netstat -nr
     bridge link show
     bridge vlan show
-    ip bridge || ip help
-    nmcli connection show
+    brctl show
 
     sleep 60
 done
