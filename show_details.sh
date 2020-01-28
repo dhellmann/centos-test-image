@@ -9,6 +9,7 @@ while true; do
     netstat -nr
     bridge link show
     bridge vlan show
+    brctl show
 
     sleep 60
 done
