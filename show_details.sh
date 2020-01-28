@@ -6,7 +6,8 @@ export PATH=$PATH:/usr/sbin:/sbin
 
 while true; do
     cat /etc/fedora-release
-    ip addr
+    rpm -q -l net-tools
+    /sbin/ip addr
     netstat -nr
     bridge link show
     bridge vlan show
