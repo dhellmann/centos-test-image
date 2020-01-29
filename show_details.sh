@@ -14,7 +14,11 @@ while true; do
     bridge vlan show
     brctl show
 
-    /usr/bin/wget -v http://hive-provisioner.e2e.bos.redhat.com/rhcos-44.81.202001030903.0-qemu.x86_64.qcow2.gz?sha256=a7931dc062f4dcd1f614e487bac8c53699d -o /output/img.gz
+    ls -al /output
+    cd /output
+    /usr/bin/wget \
+        -v --progress \
+        http://hive-provisioner.e2e.bos.redhat.com/rhcos-44.81.202001030903.0-qemu.x86_64.qcow2.gz?sha256=a7931dc062f4dcd1f614e487bac8c53699d
 
     sleep 60
 done
